@@ -1,24 +1,39 @@
 /*////////////////////////
     Table of Contents
-    1. Global Styles
-    2. Typography
-    3. Layout
-        3.1 Reusables
-        3.2 Other
-    4. Areas
-        4.1 Header
-        4.2 Introduction
+    1. Neccessary imports
+    2. Global Styles
+    3. Typography
+    4. Layout
+        4.1 Reusables
+        4.2 Other
+    5. Areas
+        5.1 Header
+        5.2 Introduction
         etc.
-    5. Media Queries
+    6. Media Queries
 ////////////////////////*/
-header{
-    color: blue;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-/* ------------------------------- 1. Global Styles -------------------------------- */
+/* ------------------------------- 1. Neccessary imports -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+/*specify families with ->
+|font-family: 'Merriweather', serif;|
+|font-family: 'Roboto', sans-serif;| */
 
+/* ------------------------------- 2. Global Styles -------------------------------- */
+:root{
+    --ex-color-purple: #5722CD;
+    --ex-color-blue: #4845E4;
+    --ex-color-pink: #ED4385;
+    --std-text-color: #0C0C0C;
+    --float-text-color: #F2F0FF;
+    --project-background-color: #F3F6F9;
+    --service-tile-text-color: #7A7A7A;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
 /* ------------------------------- 2. Typography ----------------------------------- */
 
 /* ------------------------------- 3. Layout --------------------------------------- */

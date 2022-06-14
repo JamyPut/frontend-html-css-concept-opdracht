@@ -66,16 +66,17 @@ h3{
 .navitem{
     margin: 20px;
 }
-/* --------------- 4.2 Introduction (Part of header section) ------------------- */
-#introduction{
+#banner-text{
     text-align: center;
 }
-.intro-item{
+.banner-item{
     margin: 20px 0;
 }
-#intro-subtext{
+
+#banner-subtext{
     font-size: 20px;
 }
+
 #header-button{
     border-radius: 30px;
     background-color: var(--ex-color-pink);
@@ -83,10 +84,36 @@ h3{
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
+
+#header-button:hover{
+    opacity: 75%;
+}
+
 #header-section-end{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+#intro-section{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    margin: 25px;
+}
+
+#intro-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+}
+
+#intro-article-par{
+    color: var(--ex-color-blue);
+    margin: 25px;
 }
 /* ------------------------------- 5. Media Queries -------------------------------- */

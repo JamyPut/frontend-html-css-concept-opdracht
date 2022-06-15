@@ -2,16 +2,13 @@
     Table of Contents
     1. Neccessary imports
     2. Global Styles
-    3. Typography
-    4. Layout
-        4.1 Reusables
-        4.2 Other
-    5. Areas
-        5.1 Header
-        5.2 Introduction
-        etc.
-    6. Media Queries
-////////////////////////*/
+    3. Areas
+        3.1 Header
+        3.2 Introduction
+        3.3 Articles
+    4. Media Queries
+    5. Reusables
+ */
 /* ------------------------------- 1. Neccessary imports -------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
 /*specify families with ->
@@ -34,7 +31,7 @@
     border: 0;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    color: var(--float-text-color);
+    color: var(--std-text-color);
 }
 h1,
 h2,
@@ -44,14 +41,6 @@ h5,
 h6{
     font-family: 'Merriweather', serif;
 }
-/* ------------------------------- 2. Typography ----------------------------------- */
-
-/* ------------------------------- 3. Layout --------------------------------------- */
-
-/* --------------- 3.1 Reusables ----------------------- */
-
-/* --------------- 3.2 Other --------------------------- */
-
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
@@ -61,7 +50,9 @@ h6{
     /*position: relative;*/
     /*padding-bottom: 100px;*/
 }
-
+#header-section *{
+    color: var(--float-text-color);
+}
 #nav-bar{
     display: flex;
     flex-direction: row;
@@ -131,4 +122,40 @@ h6{
 .intro-article-question a{
     color: var(--ex-color-blue);
 }
+/*-------------------------4.3 Articles----------------------------*/
+#rolling-stone-article{
+    flex-direction: row-reverse;
+}
+#worth-article{
+    flex-direction: row-reverse;
+}
 /* ------------------------------- 5. Media Queries -------------------------------- */
+/*---------------------------------5. Reusables----------------------*/
+.project-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+.project-text{
+    margin: 50px;
+    /*flex-basis: 400px;*/
+    /*flex-grow: 0;*/
+    /*flex-shrink: 1;*/
+}
+.project-text *{
+    padding: 25px;
+}
+.project-text a{
+    color: var(--ex-color-blue);
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+}
+.image-wrapper{
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.poject-image{
+    width: 100%;
+}

@@ -112,7 +112,7 @@ h3{
     font-size: 40px;
 }
 
-#intro-article-par{
+.intro-article-par{
     color: var(--ex-color-blue);
     margin: 25px;
 }

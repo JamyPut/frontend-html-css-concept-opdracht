@@ -38,7 +38,10 @@
 }
 h1,
 h2,
-h3{
+h3,
+h4,
+h5,
+h6{
     font-family: 'Merriweather', serif;
 }
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -55,6 +58,8 @@ h3{
 #header-section{
     background: rgb(72,69,228);
     background: linear-gradient(180deg, rgba(72,69,228,1) 30%, rgba(87,34,208,1) 70%);
+    /*position: relative;*/
+    /*padding-bottom: 100px;*/
 }
 
 #nav-bar{
@@ -94,6 +99,9 @@ h3{
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
+    /*position:absolute;*/
+    /*bottom:0%;*/
+    /*left:50%;*/
 }
 
 /* --------------- 4.2 Introduction ------------------- */
@@ -107,13 +115,20 @@ h3{
 #intro-article{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    font-size: 40px;
 }
 
 .intro-article-par{
     color: var(--ex-color-blue);
     margin: 25px;
+}
+.intro-article-question{
+    color: var(--std-text-color);
+    margin: 50px;
+}
+.intro-article-question a{
+    color: var(--ex-color-blue);
 }
 /* ------------------------------- 5. Media Queries -------------------------------- */

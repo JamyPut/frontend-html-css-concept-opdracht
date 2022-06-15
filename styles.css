@@ -1,36 +1,182 @@
 /*////////////////////////
     Table of Contents
-    1. Global Styles
-    2. Typography
-    3. Layout
-        3.1 Reusables
-        3.2 Other
-    4. Areas
-        4.1 Header
-        4.2 Introduction
-        etc.
-    5. Media Queries
-////////////////////////*/
-header{
-    color: blue;
+    1. Neccessary imports
+    2. Global Styles
+    3. Areas
+        3.1 Header
+        3.2 Introduction
+        3.3 Articles
+    4. Media Queries
+    5. Reusables
+ */
+/* ------------------------------- 1. Neccessary imports -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+/*specify families with ->
+|font-family: 'Merriweather', serif;|
+|font-family: 'Roboto', sans-serif;| */
+
+/* ------------------------------- 2. Global Styles -------------------------------- */
+:root{
+    --ex-color-purple: #5722CD;
+    --ex-color-blue: #4845E4;
+    --ex-color-pink: #ED4385;
+    --std-text-color: #0C0C0C;
+    --float-text-color: #F2F0FF;
+    --project-background-color: #F3F6F9;
+    --service-tile-text-color: #7A7A7A;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: var(--std-text-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Merriweather', serif;
+}
+/* ------------------------------- 3. Areas ---------------------------------------- */
+
+/* --------------- 3.1 Header ------------------------- */
+#header-section{
+    background: rgb(72,69,228);
+    background: linear-gradient(180deg, rgba(72,69,228,1) 30%, rgba(87,34,208,1) 70%);
+    /*position: relative;*/
+    /*padding-bottom: 100px;*/
+}
+#header-section *{
+    color: var(--float-text-color);
+}
+#nav-bar{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
 }
-/* ------------------------------- 1. Global Styles -------------------------------- */
 
-/* ------------------------------- 2. Typography ----------------------------------- */
+.navitem{
+    margin: 20px;
+}
+#banner-text{
+    text-align: center;
+}
+.banner-item{
+    margin: 20px 0;
+}
 
-/* ------------------------------- 3. Layout --------------------------------------- */
+#banner-subtext{
+    font-size: 20px;
+}
 
-/* --------------- 3.1 Reusables ----------------------- */
+#header-button{
+    border-radius: 30px;
+    background-color: var(--ex-color-pink);
+    padding: 20px 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
 
-/* --------------- 3.2 Other --------------------------- */
+#header-button:hover{
+    opacity: 75%;
+}
 
-/* ------------------------------- 4. Areas ---------------------------------------- */
+#header-section-end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    /*position:absolute;*/
+    /*bottom:0%;*/
+    /*left:50%;*/
+}
 
-/* --------------- 4.1 Header ------------------------- */
+/* --------------- 3.2 Introduction ------------------- */
+#intro-section{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    margin: 25px;
+}
 
-/* --------------- 4.2 Introduction ------------------- */
+#intro-article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
 
-/* ------------------------------- 5. Media Queries -------------------------------- */
+.intro-article-par{
+    color: var(--ex-color-blue);
+    margin: 25px;
+}
+.intro-article-question{
+    color: var(--std-text-color);
+    margin: 50px;
+}
+.intro-article-question a{
+    color: var(--ex-color-blue);
+}
+/*-------------------------3.3 Articles----------------------------*/
+#rolling-stone-article{
+    flex-direction: row-reverse;
+}
+#worth-article{
+    flex-direction: row-reverse;
+}
+/*--------------------------3.4 Services-------------------------*/
+.service-item h1{
+    padding-bottom: 20px;
+}
+/* ------------------------------- 4. Media Queries -------------------------------- */
+/*---------------------------------5. Reusables----------------------*/
+/*------------------------5.1 Articles------------------*/
+.project-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+.project-text{
+    margin: 50px;
+    /*flex-basis: 400px;*/
+    /*flex-grow: 0;*/
+    /*flex-shrink: 1;*/
+}
+.project-text *{
+    padding: 25px;
+}
+.project-text a{
+    color: var(--ex-color-blue);
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+}
+.image-wrapper{
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.poject-image{
+    width: 100%;
+}
+/*---------------------5.2 Services---------------*/
+#service-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    background-color: var(--project-background-color);
+}
+.service-item{
+    flex-basis: 250px;
+    height: 50%;
+    border: solid 1px var(--ex-color-blue);
+    margin: 20px;
+    padding: 25px;
+}

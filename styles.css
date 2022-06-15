@@ -41,9 +41,9 @@ h5,
 h6{
     font-family: 'Merriweather', serif;
 }
-/* ------------------------------- 4. Areas ---------------------------------------- */
+/* ------------------------------- 3. Areas ---------------------------------------- */
 
-/* --------------- 4.1 Header ------------------------- */
+/* --------------- 3.1 Header ------------------------- */
 #header-section{
     background: rgb(72,69,228);
     background: linear-gradient(180deg, rgba(72,69,228,1) 30%, rgba(87,34,208,1) 70%);
@@ -95,7 +95,7 @@ h6{
     /*left:50%;*/
 }
 
-/* --------------- 4.2 Introduction ------------------- */
+/* --------------- 3.2 Introduction ------------------- */
 #intro-section{
     /*display: flex;*/
     /*flex-direction: column;*/
@@ -122,15 +122,20 @@ h6{
 .intro-article-question a{
     color: var(--ex-color-blue);
 }
-/*-------------------------4.3 Articles----------------------------*/
+/*-------------------------3.3 Articles----------------------------*/
 #rolling-stone-article{
     flex-direction: row-reverse;
 }
 #worth-article{
     flex-direction: row-reverse;
 }
-/* ------------------------------- 5. Media Queries -------------------------------- */
+/*--------------------------3.4 Services-------------------------*/
+.service-item h1{
+    padding-bottom: 20px;
+}
+/* ------------------------------- 4. Media Queries -------------------------------- */
 /*---------------------------------5. Reusables----------------------*/
+/*------------------------5.1 Articles------------------*/
 .project-block{
     display: flex;
     flex-direction: row;
@@ -158,4 +163,20 @@ h6{
 }
 .poject-image{
     width: 100%;
+}
+/*---------------------5.2 Services---------------*/
+#service-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    background-color: var(--project-background-color);
+}
+.service-item{
+    flex-basis: 250px;
+    height: 50%;
+    border: solid 1px var(--ex-color-blue);
+    margin: 20px;
+    padding: 25px;
 }
